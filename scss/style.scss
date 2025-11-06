@@ -1,6 +1,23 @@
-@forward './abstracts/';
+@use './abstracts/index' as *;
 @forward './base/';
 // @forward './components/';
 @forward './layout/';
 
+
+:root {
+  /* Colors */
+  @each $color, $shades in $colors {
+    @each $shade, $value in $shades {
+      --clr-#{$color}-#{$shade}:#{$value};
+    }
+  }
+  /* Spacing */
+  @each $spacing, $range in $spacer {
+    --spacing-#{$spacing}:#{$range};
+  }
+  /* Border Radius */
+  @each $size, $range in $radius{
+    --radius-#{$size}:#{$range};
+  }
+}
 
