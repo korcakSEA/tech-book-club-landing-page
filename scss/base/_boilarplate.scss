@@ -1,23 +1,40 @@
+/* --------- */
+/* Reset     */
+/* --------- */
+
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
+// Help us to make calculationg width and heights easier, Default vaues are resetted
 *,
 *::after,
 *::before {
-  padding: 0;
-  margin: 0;
   box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
 
-a{
+body{
+  min-height: 100vh; //Prevents short pages being an issue
+}
+
+a {
   text-decoration: none;
 }
-
-ul{
+ 
+ul {
   list-style: none;
 }
 
-img{
-  max-width: 100%;
+// to make images easier to work with
+img {
+  max-width: 100%; 
+  display: block;
+}
+
+// As the buttons dont inherit font property
+button{
+  font:inherit;
 }
