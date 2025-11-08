@@ -1,6 +1,2 @@
 @use '../abstracts/index' as *;
 
-h1{
-  @include text-preset-1;
-  color: var(--clr-salmon-50);
-}

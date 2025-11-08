@@ -27,3 +27,15 @@ $radius: (
   24: 24px,
   full: 999px,
 );
+
+:root {
+
+  /* Spacing */
+  @each $spacing, $range in $spacer {
+    --spacing-#{$spacing}:#{$range};
+  }
+  /* Border Radius */
+  @each $size, $range in $radius{
+    --radius-#{$size}:#{$range};
+  }
+}
