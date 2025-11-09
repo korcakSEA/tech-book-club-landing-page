@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./dist/css/style.css">
+  <title>Document</title>
+  <style>
+    .btn {
+
+      margin: 2rem;
+      display: flex;
+      align-items: center;  
+      gap: 1rem;
+      padding: var(--spacing-250) var(--spacing-300);
+      border-radius: 8px;
+      background: var(--clr-salmon-50);
+      position: relative;
+      cursor: pointer;
+      overflow: hidden;/* hides pseudo overflow */
+      z-index: 0; /* make sure ::after can sit behind */
+    }
+
+    .btn::after {
+      content: "";
+      background: var(--gradient-regular);
+      position: absolute;
+      top: 0;
+      left: 0;  
+      width: 100%;
+      height: 100%;
+      border-radius: 8px;
+      opacity: 0;
+      transition: opacity 0.3s ease-in;
+      z-index: -1;/* put the gradient BEHIND the text */
+    }
+
+    .btn:hover::after,
+    .btn:focus::after {
+      opacity: 1;
+    }
+
+    .btn:focus{
+      outline: 2px solid var(--clr-neutral-700);
+      outline-offset: 2px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <button type="button" class="text-preset-5 btn">Button <img src="./assets/images/icon-arrow-down.svg" alt=""></button>
+</body>
+
+</html>

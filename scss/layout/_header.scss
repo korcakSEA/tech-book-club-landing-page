@@ -9,18 +9,22 @@
       url('../../assets/images/pattern-glow.svg');
     background-repeat: no-repeat, no-repeat;
     background-position: left top,
-      right calc(5vw - 675px) bottom -350px;
+      right calc(5vw - 675px) bottom -450px;
     background-size: 100%, auto;
   }
 
   &__navbar {
     margin-bottom: var(--spacing-600);
+    @include respond-to(lg){
+      margin-bottom: var(--spacing-900);
+    }
   }
 
   &__section {
     gap: var(--spacing-800);
   }
 
+  // Header Text
   &__text{
     margin-bottom: var(--spacing-400);
   }
@@ -33,5 +37,14 @@
   }
   &__description{
     color: var(--clr-neutral-700);
+  }
+
+  // Header CTA
+  // Button and testimonial styled as component
+
+  // Hero image
+  &__hero-image{
+    border-radius: var(--radius-8);
+    overflow: hidden;
   }
 }

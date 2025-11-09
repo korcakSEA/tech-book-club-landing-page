@@ -1,11 +1,13 @@
 $colors: (
-  neutral:(0 :hsl(0, 0%, 100%),
+  neutral:(
+    0 :hsl(0, 0%, 100%),
     100:hsl(17, 41%, 97%),
     200:hsl(17, 12%, 89%),
     700:hsl(195, 23%, 28%),
     900:hsl(194, 78%, 11%),
   ),
-  salmon:(50 :hsl(23, 100%, 97%),
+  salmon:(
+    50 :hsl(23, 100%, 97%),
     100:hsl(22, 100%, 91%),
     500:hsl(22, 99%, 72%),
   ),
@@ -13,7 +15,8 @@ $colors: (
 
 // Gradients
 $gradient-text: linear-gradient(107deg, #FF9A60 -11.37%, #062630 61.84%);
-$gradient : linear-gradient(90deg, #FFE2D1 0%, #FFF5EF 100%);
+$gradient-primary : linear-gradient(90deg, #FFE2D1 0%, #FFF5EF 100%);
+$gradient-secondary : linear-gradient(90deg, hsl(195, 23%, 28%) 0%, hsl(194, 78%, 11%) 100%);
 
 :root {
 
@@ -26,5 +29,6 @@ $gradient : linear-gradient(90deg, #FFE2D1 0%, #FFF5EF 100%);
 
   // Gradient
   --gradient-text: #{$gradient-text};
-  --gradient-regular: #{$gradient};
+  --gradient-primary: #{$gradient-primary};
+  --gradient-secondary: #{$gradient-secondary};
 }
