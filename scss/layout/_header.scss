@@ -1,2 +1,37 @@
 @use '../abstracts/index' as *;
 
+.header {
+  background-color: var(--clr-neutral-100);
+  margin-bottom: var(--spacing-1050);
+  .container {
+    padding-block: var(--spacing-300) var(--spacing-900);
+    background-image: url('../../assets/images/pattern-light-bg.svg'),
+      url('../../assets/images/pattern-glow.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: left top,
+      right calc(5vw - 675px) bottom -350px;
+    background-size: 100%, auto;
+  }
+
+  &__navbar {
+    margin-bottom: var(--spacing-600);
+  }
+
+  &__section {
+    gap: var(--spacing-800);
+  }
+
+  &__text{
+    margin-bottom: var(--spacing-400);
+  }
+  &__heading {
+    margin-bottom: var(--spacing-300);
+    background: var(--gradient-text);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  &__description{
+    color: var(--clr-neutral-700);
+  }
+}

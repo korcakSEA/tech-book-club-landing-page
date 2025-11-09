@@ -1,0 +1,22 @@
+.btn {
+  text-transform: uppercase;
+  padding: var(--spacing-250) var(--spacing-300);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-200);
+  border-radius: var(--radius-8);
+
+  &-primary {
+    background: var(--clr-salmon-50);
+    transition: all 0.3s ease-in;
+
+    &:hover {
+      background: var(--gradient-regular);
+    }
+
+    &:focus {
+      background: var(--gradient-regular);
+      border: 1px double var(--clr-neutral-900);
+    }
+  }
+}
