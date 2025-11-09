@@ -1,19 +1,23 @@
-.cta-testimonial{
+@use '../abstracts/' as *;
+
+.cta-testimonial {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-250);
-  width: max-content;
+  width: 100%;
+  @include respond-to(md) {
+    width: max-content;
+  }
 }
 
-.testimonial{
+.testimonial {
   display: flex;
   align-items: center;
-  gap:var(--spacing-150);
+  gap: var(--spacing-150);
 
-  &-rating{
+  &-rating {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-50);
   }
 }
-

@@ -2,6 +2,7 @@
     .btn {
       display: flex;
       align-items: center;
+      justify-content: center;
       gap: 1rem;
       padding: var(--spacing-250) var(--spacing-300);
       border-radius: var(--radius-8);
