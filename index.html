@@ -67,10 +67,10 @@
     </div>
   </header>
   <!-- Main starts here -->
-  <main class="container" style="border: 2px solid red;">
+  <main class="container">
 
     <!----- Read together section ----->
-    <section class="read grid" style="outline: 1px solid rebeccapurple;">
+    <section class="read grid">
       <!-- Read Together Text content -->
       <div class="read__content">
         <h2 class="read__heading text-preset-2">Read together, grow together</h2>
@@ -89,11 +89,11 @@
       </picture>
     </section>
 
-    <!-- Not your average book club Section -->
-    <section class="club grid" style="outline: 1px solid rebeccapurple;">
+    <!-- Book club Section -->
+    <section class="club grid">
       <!-- Not you average text -->
       <div class="club__content">
-        <h2 class="club__heading text-preset-2">Not your average book club</h2>
+        <h2 class="club__heading text-preset-2">Not your average book <span>club <span class="circle-top"><img src="./assets/images/pattern-circle.png" aria-hidden="true"></span></span></h2>
         <p class="club__description text-preset-5">
           Connect with a community that speaks your language - from <strong>Python</strong> to <strong>TypeScript</strong> and
           everything in between. Our discussions blend technical depth with practical applications.
@@ -102,22 +102,25 @@
       <!-- Not you average Image -->
       <picture class="club__image">
         <source media="(min-width: 64rem)" srcset="./assets/images/image-not-average-desktop.webp">
-        <source media="(min-width: 48rem)" srcset="./assets/images/image-not-average-mobile.webp">
+        <source media="(min-width: 48rem)" srcset="./assets/images/image-not-average-tablet.webp">
         <img src="./assets/images/image-not-average-mobile.webp" alt="People read books together">
       </picture>
+      <img src="./assets/images/logos-tech.svg" aria-hidden="true" class="club__tech-logos">
     </section>
 
-    <!-- Your Journey section -->
-    <section>
-      <h2>Your tech reading journey</h2>
-      1
-      Choose your membership tier
-      2
-      Get your monthly book selection
-      3
-      Join our discussion forums
-      4
-      Attend exclusive meetups
+    <!-- Journey section -->
+    <section class="journey" style="border: 2px solid red;">
+      <h2 class="journey__heading text-preset-2" style="border: 1px solid rebeccapurple;">Your tech reading journey</h2>
+      <div class="div">
+        1
+        Choose your membership tier
+        2
+        Get your monthly book selection
+        3
+        Join our discussion forums
+        4
+        Attend exclusive meetups
+      </div>
     </section>
 
     <!-- CTA section -->
