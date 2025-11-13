@@ -462,7 +462,7 @@ main .journey {
   overflow: hidden;
   background-image: url("../../assets/images/pattern-light-bg.svg"), url("../../assets/images/pattern-glow.svg");
   background-repeat: no-repeat;
-  background-position: left top, right -600px bottom 75%;
+  background-position: left top, right -575px bottom 100%;
 }
 @media (min-width: 48rem) {
   main .journey {
@@ -505,4 +505,24 @@ main .journey__steps {
 }
 main .journey__steps-item {
   --gap: var(--spacing-250);
+  position: relative;
+}
+main .journey__steps-item .step-number {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: grid;
+  place-items: center;
+  border-radius: var(--radius-4);
+  border: 2px solid var(--clr-neutral-900);
+}
+main .journey__steps-item .journey__arrow {
+  display: none;
+}
+@media (min-width: 75rem) {
+  main .journey__steps-item .journey__arrow {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
 }

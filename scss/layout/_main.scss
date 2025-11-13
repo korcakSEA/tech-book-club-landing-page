@@ -126,8 +126,8 @@ main {
     background-image: url('../../assets/images/pattern-light-bg.svg'),
       url('../../assets/images/pattern-glow.svg');
     background-repeat: no-repeat;
-    background-position: left top, right -600px bottom 75%;
-    
+    background-position: left top, right -575px bottom 100%;
+
 
     @include respond-to(md) {
       padding: var(--spacing-900) var(--spacing-400);
@@ -160,7 +160,7 @@ main {
 
 
       @include respond-to(lg) {
-        max-width:65.625rem;
+        max-width: 65.625rem;
         flex-direction: row;
         --gap: var(--spacing-600);
         margin-inline: auto;
@@ -168,8 +168,31 @@ main {
 
       &-item {
         --gap: var(--spacing-250);
+        position: relative;
+
+        .step-number{
+          width: 2.5rem;
+          height: 2.5rem;
+          display: grid;
+          place-items: center;
+          border-radius: var(--radius-4);
+          border: 2px solid var(--clr-neutral-900);
+        }
+
+        .journey__arrow {
+          display: none;
+
+          @include respond-to(lg) {
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+          }
+        }
+
       }
     }
+
 
   }
 
