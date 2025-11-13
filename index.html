@@ -19,14 +19,14 @@
         <a href="#"><img src="./assets/images/logo.svg" alt="Tech Club Logo"></a>
       </div>
       <!-- Header Content -->
-      <section class="header__section grid" >
+      <section class="header__section grid">
         <div class="header__content">
 
           <!-- Text content -->
           <div class="header__text">
             <h1 class="header__heading text-preset-1">Join the ultimate tech book club</h1>
             <p class="header__description text-preset-5">
-              Turn your reading time into learning time with fellow tech enthusiasts. 
+              Turn your reading time into learning time with fellow tech enthusiasts.
               Get curated recommendations, join vibrant discussions, and level up your
               skills one chapter at a time.
             </p>
@@ -35,7 +35,7 @@
           <!-- CTA content -->
           <div class="cta cta-testimonial">
             <!-- CTA primary Button -->
-            <button class="button btn btn-primary text-preset-6">Review membership options 
+            <button class="button btn btn-primary text-preset-6">Review membership options
               <img src="./assets/images/icon-arrow-down.svg" aria aria-hidden="true">
             </button>
             <!-- Testimonial -->
@@ -51,7 +51,8 @@
                   <span><img src="./assets/images/icon-star.svg" aria-hidden="true"></span>
                   <span><img src="./assets/images/icon-star.svg" aria-hidden="true"></span>
                 </div>
-                <p class="testimonial-text text-preset-7" style="color: var(--clr-neutral-700);">200+ developers joined already</p>
+                <p class="testimonial-text text-preset-7" style="color: var(--clr-neutral-700);">200+ developers joined
+                  already</p>
               </div>
             </div>
           </div>
@@ -66,44 +67,46 @@
     </div>
   </header>
   <!-- Main starts here -->
-  <main class="container">
-    <!-- Read together section -->
-    <section>
-      <!-- Read Together content -->
-      <div class="read-together">
-        <!-- Read Together Text content -->
-        <div>
-          <h2>Read together, grow together</h2>
-          Monthly curated tech reads selected by industry experts
-          Virtual and in-person meetups for deep-dive discussions
-          Early access to new tech book releases
-          Author Q&A sessions with tech thought leaders
-        </div>
+  <main class="container" style="border: 2px solid red;">
+
+    <!----- Read together section ----->
+    <section class="read grid" style="outline: 1px solid rebeccapurple;">
+      <!-- Read Together Text content -->
+      <div class="read__content">
+        <h2 class="read__heading text-preset-2">Read together, grow together</h2>
+        <ul class="read__feature-list text-preset-5">
+          <li>Monthly curated tech reads selected by industry experts</li>
+          <li>Virtual and in-person meetups for deep-dive discussions</li>
+          <li>Early access to new tech book releases</li>
+          <li>Author Q&A sessions with tech thought leaders</li>
+        </ul>
       </div>
       <!-- Read together Image -->
-      <picture>
+      <picture class="read__image">
         <source media="(min-width: 64rem)" srcset="./assets/images/image-read-together-desktop.webp">
         <source media="(min-width: 48rem)" srcset="./assets/images/image-read-together-tablet.webp">
         <img src="./assets/images/image-read-together-mobile.webp" alt="People read books together">
       </picture>
     </section>
+
     <!-- Not your average book club Section -->
-    <section>
+    <section class="club grid" style="outline: 1px solid rebeccapurple;">
       <!-- Not you average text -->
-      <div class="not-your-average">
-        <h2>Not your average book club</h2>
-        <p>
-          Connect with a community that speaks your language - from Python to TypeScript and
+      <div class="club__content">
+        <h2 class="club__heading text-preset-2">Not your average book club</h2>
+        <p class="club__description text-preset-5">
+          Connect with a community that speaks your language - from <strong>Python</strong> to <strong>TypeScript</strong> and
           everything in between. Our discussions blend technical depth with practical applications.
         </p>
       </div>
       <!-- Not you average Image -->
-      <picture>
+      <picture class="club__image">
         <source media="(min-width: 64rem)" srcset="./assets/images/image-not-average-desktop.webp">
         <source media="(min-width: 48rem)" srcset="./assets/images/image-not-average-mobile.webp">
         <img src="./assets/images/image-not-average-mobile.webp" alt="People read books together">
       </picture>
     </section>
+
     <!-- Your Journey section -->
     <section>
       <h2>Your tech reading journey</h2>
@@ -116,6 +119,7 @@
       4
       Attend exclusive meetups
     </section>
+
     <!-- CTA section -->
     <section class="membership">
       <h2>Membership options</h2>
@@ -141,6 +145,7 @@
         <button type="submit">Talk to us</button>
       </div>
     </section>
+
     <!-- Testiomonial Section -->
     <section>
       "This book club transformed my technical reading from a solitary

@@ -17,10 +17,11 @@
 
 .grid {
   display: grid;
+  gap: var(--gap, var(--spacing-200));
   grid-template-columns: auto;
 
   @include respond-to(lg) {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
   }
 }
