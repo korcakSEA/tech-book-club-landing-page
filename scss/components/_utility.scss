@@ -28,4 +28,9 @@
 
 .flex {
   display: flex;
+  gap: var(--gap, var(--spacing-200));
+}
+
+.flex-col{
+  flex-direction: column;
 }
