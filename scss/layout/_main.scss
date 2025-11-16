@@ -196,4 +196,18 @@ main {
 
   }
 
+  // Membership Section
+
+  .card-container{
+    max-width: 60.625rem;
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: var(--spacing-300);
+    @include respond-to(lg){
+      grid-template-columns: 1fr 350px 1fr;
+    }
+
+  }
+
 }

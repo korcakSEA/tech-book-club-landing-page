@@ -11,15 +11,17 @@
 
       margin: 2rem;
       display: flex;
-      align-items: center;  
+      align-items: center;
       gap: 1rem;
       padding: var(--spacing-250) var(--spacing-300);
       border-radius: 8px;
       background: var(--clr-salmon-50);
       position: relative;
       cursor: pointer;
-      overflow: hidden;/* hides pseudo overflow */
-      z-index: 0; /* make sure ::after can sit behind */
+      overflow: hidden;
+      /* hides pseudo overflow */
+      z-index: 0;
+      /* make sure ::after can sit behind */
     }
 
     .btn::after {
@@ -27,13 +29,14 @@
       background: var(--gradient-regular);
       position: absolute;
       top: 0;
-      left: 0;  
+      left: 0;
       width: 100%;
       height: 100%;
       border-radius: 8px;
       opacity: 0;
       transition: opacity 0.3s ease-in;
-      z-index: -1;/* put the gradient BEHIND the text */
+      z-index: -1;
+      /* put the gradient BEHIND the text */
     }
 
     .btn:hover::after,
@@ -41,16 +44,60 @@
       opacity: 1;
     }
 
-    .btn:focus{
+    .btn:focus {
       outline: 2px solid var(--clr-neutral-700);
       outline-offset: 2px;
     }
+
+  /* card syling */
+  .card-container{
+    max-width: 60.625rem;
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(286px,1fr));
+    gap:24px;
+  }
+
+  .card:nth-child(2){
+    background-color: bisque;
+  }
+
+  @media (min-width:1200px) {
+    .card-container{
+      grid-template-columns: 1fr 350px 1fr;
+    }
+  }
 
   </style>
 </head>
 
 <body>
   <button type="button" class="text-preset-5 btn">Button <img src="./assets/images/icon-arrow-down.svg" alt=""></button>
+
+  <div class="card-container" style="border: 1px solid red;">
+    <div class="card" style="border: 2px solid rebeccapurple;">
+      <h3>Starter</h3>
+      $19/month
+      1 book/month
+      Online forums
+      <button type="submit" class="btn btn-primary">Subscribe now</button>
+    </div>
+    <div class="card" style="border: 2px solid rebeccapurple;">
+      <h3>Pro</h3>
+      $29/month
+      2 books/month
+      Virtual meetups
+      <button type="submit" class="btn btn-primary">Subscribe now</button>
+    </div>
+    <div class="card" style="border: 2px solid rebeccapurple;">
+      <h3>Enterprise</h3>
+      <p>Custom</p>
+      Team access
+      Private sessions
+      <button type="submit" class="btn btn-primary">Talk to us</button>
+    </div>
+  </div>
+
 </body>
 
 </html>
