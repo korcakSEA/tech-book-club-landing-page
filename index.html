@@ -93,9 +93,11 @@
     <section class="club grid">
       <!-- Not you average text -->
       <div class="club__content">
-        <h2 class="club__heading text-preset-2">Not your average book <span>club <span class="circle-top"><img src="./assets/images/pattern-circle.png" aria-hidden="true"></span></span></h2>
+        <h2 class="club__heading text-preset-2">Not your average book <span>club <span class="circle-top"><img
+                src="./assets/images/pattern-circle.png" aria-hidden="true"></span></span></h2>
         <p class="club__description text-preset-5">
-          Connect with a community that speaks your language - from <strong>Python</strong> to <strong>TypeScript</strong> and
+          Connect with a community that speaks your language - from <strong>Python</strong> to
+          <strong>TypeScript</strong> and
           everything in between. Our discussions blend technical depth with practical applications.
         </p>
       </div>
@@ -110,7 +112,7 @@
 
     <!-- Journey section -->
     <section class="journey">
-      <h2 class="journey__heading text-preset-2" >Your tech reading journey</h2>
+      <h2 class="journey__heading text-preset-2">Your tech reading journey</h2>
       <div class="journey__steps text-preset-6 flex flex-col">
         <div class="journey__steps-item flex flex-col">
           <div class="step-number">1</div>
@@ -137,37 +139,61 @@
     <!-- CTA section -->
     <section class="membership">
       <h2 class="text-preset-2">Membership options</h2>
-      <div class="card-container" style="border: 1px solid red;">
-        <div class="card" style="border: 2px solid rebeccapurple;">
-          <h3>Starter</h3>
-          $19/month
-          1 book/month
-          Online forums
-          <button type="submit" class="btn btn-primary">Subscribe now</button>
+      <div class="card-container">
+        <div class="card">
+          <div class="card__details">
+            <h3 class="text-preset-4-sb">Starter</h3>
+            <p class="text-preset-5"><span class="text-preset-3">$19</span>/month</p>
+            <hr>
+            <ul class="read__feature-list text-preset-5">
+              <li>1 book/month</li>
+              <li>Online forums</li>
+            </ul>
+          </div>
+          <button type="submit" class="btn btn-primary text-preset-6">Subscribe now</button>
         </div>
-        <div class="card" style="border: 2px solid rebeccapurple;">
-          <h3>Pro</h3>
-          $29/month
-          2 books/month
-          Virtual meetups
-          <button type="submit" class="btn btn-primary">Subscribe now</button>
+        <div class="card">
+          <div class="card__details">
+            <h3 class="text-preset-4-sb">Pro</h3>
+            <p class="text-preset-5"><span class="text-preset-3">$29</span>/month</p>
+            <hr>
+            <ul class="read__feature-list text-preset-5">
+              <li>2 books/month</li>
+              <li>Virtual meetups</li>
+            </ul>
+          </div>
+          <button type="submit" class="btn btn-primary text-preset-6">Subscribe now</button>
         </div>
-        <div class="card" style="border: 2px solid rebeccapurple;">
-          <h3>Enterprise</h3>
-          <p>Custom</p>
-          Team access
-          Private sessions
-          <button type="submit" class="btn btn-primary">Talk to us</button>
+        <div class="card">
+          <div class="card__details">
+            <h3 class="text-preset-4-sb">Enterprise</h3>
+            <p class="text-preset-3">Custom</p>
+            <hr>
+            <ul class="read__feature-list text-preset-5">
+              <li>Team access</li>
+              <li>Private sessions</li>
+            </ul>
+          </div>
+          <button type="submit" class="btn btn-primary text-preset-6">Talk to us</button>
         </div>
       </div>
     </section>
 
     <!-- Testiomonial Section -->
-    <section>
-      "This book club transformed my technical reading from a solitary
-      activity into an enriching community experience. The discussions
-      are gold!"
-      Sarah Chen, Software Architect
+    <section class="testimonial">
+      <div class="testimonial-star flex">
+        <span><img src="./assets/images/icon-star.svg" alt="star icon"></span>
+        <span><img src="./assets/images/icon-star.svg" aria-hidden="true"></span>
+        <span><img src="./assets/images/icon-star.svg" aria-hidden="true"></span>
+        <span><img src="./assets/images/icon-star.svg" aria-hidden="true"></span>
+        <span><img src="./assets/images/icon-star.svg" aria-hidden="true"></span>
+      </div>
+      <blockquote class="testimonial__text text-preset-3">
+        "This book club transformed my technical reading from a solitary
+        activity into an enriching community experience. The discussions
+        are gold!"
+      </blockquote>
+      <span class="testimonial__author text-preset-5">Sarah Chen, Software Architect</span>
     </section>
   </main>
   <!-- Footer starts here -->
