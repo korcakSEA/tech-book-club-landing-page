@@ -12,6 +12,45 @@ main {
     margin-bottom: var(--section-spacing, 2rem);
   }
 
+  // Testimonial Section
+
+.testimonial {
+  max-width: 60.625rem;
+  margin-inline: auto;
+  padding-inline: var(--spacing-200);
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-400);
+  align-items: flex-start;
+
+  @include respond-to(md) {
+    padding-inline: var(--spacing-400);
+  }
+
+  @include respond-to(lg) {
+    padding-inline: 0;
+    align-items: center;
+  }
+
+  &-star {
+    --gap: var(--spacing-75)
+  }
+
+  &__text {
+    color: var(--clr-neutral-900);
+
+    @include respond-to(lg) {
+      text-align: center;
+    }
+  }
+
+  &__author {
+    color: var(--clr-neutral-700);
+  }
+
+}
+
 }
 
 // READ - CLUB common
@@ -251,7 +290,7 @@ main {
       span {
         vertical-align: middle;
         margin-right: var(--spacing-100);
-        color: var(--clr-neutral-900)
+        color: var(--clr-neutral-900);
       }
 
       p {
@@ -290,41 +329,3 @@ main {
 
 }
 
-// Testimonial Section
-
-.testimonial {
-  max-width: 60.625rem;
-  margin-inline: auto;
-  padding-inline: var(--spacing-200);
-
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-400);
-  align-items: flex-start;
-
-  @include respond-to(md) {
-    padding-inline: var(--spacing-400);
-  }
-
-  @include respond-to(lg) {
-    padding-inline: 0;
-    align-items: center;
-  }
-
-  &-star {
-    --gap: var(--spacing-75)
-  }
-
-  &__text {
-    color: var(--clr-neutral-900);
-
-    @include respond-to(lg) {
-      text-align: center;
-    }
-  }
-
-  &__author {
-    color: var(--clr-neutral-700);
-  }
-
-}

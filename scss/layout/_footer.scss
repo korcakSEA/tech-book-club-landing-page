@@ -1,0 +1,63 @@
+@use '../abstracts/' as *;
+
+footer {
+  background-color: var(--clr-neutral-900);
+  padding: var(--spacing-600) var(--spacing-200) 0;
+
+  border-top-left-radius: var(--radius-20);
+  border-top-right-radius: var(--radius-20);
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-400);
+
+  @include respond-to(md) {
+    padding: var(--spacing-800) var(--spacing-400) 0;
+    gap: var(--spacing-800);
+  }
+
+  @include respond-to(lg) {
+    padding: var(--spacing-1100) var(--spacing-900) 0;
+  }
+
+  .cta-testimonial {
+    align-items: center;
+  }
+
+}
+
+.main__content {
+  max-width: 94ch;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-500);
+  color: var(--clr-neutral-0);
+
+  &__heading {
+    text-align: center;
+  }
+}
+
+.footer__content {
+  width: 100%;
+  padding: var(--spacing-300) var(--spacing-400);
+  color: var(--clr-neutral-0);
+  align-items: center;
+  border-top: 1px solid var(--clr-neutral-700);
+
+  @include respond-to(md) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @include respond-to(lg) {
+    padding-inline: 0;
+  }
+
+  .social-media {
+    --gap: var(--spacing-300);
+    align-items: center;
+  }
+}

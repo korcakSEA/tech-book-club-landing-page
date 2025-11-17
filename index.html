@@ -35,9 +35,11 @@
           <!-- CTA content -->
           <div class="cta cta-testimonial">
             <!-- CTA primary Button -->
-            <button class="button btn btn-primary text-preset-6">Review membership options
-              <img src="./assets/images/icon-arrow-down.svg" aria aria-hidden="true">
-            </button>
+            <a href="#membership">
+              <button class="button btn btn-primary text-preset-6">Review membership options
+                <img src="./assets/images/icon-arrow-down.svg" aria aria-hidden="true">
+              </button>
+            </a>
             <!-- Testimonial -->
             <div class="testimonial">
               <!-- testimonial image -->
@@ -137,7 +139,7 @@
     </section>
 
     <!-- CTA section -->
-    <section class="membership">
+    <section class="membership" id="membership">
       <h2 class="text-preset-2">Membership options</h2>
       <div class="card-container">
         <div class="card">
@@ -167,7 +169,7 @@
         <div class="card">
           <div class="card__details">
             <h3 class="text-preset-4-sb">Enterprise</h3>
-            <p class="text-preset-3">Custom</p>
+            <p class="text-preset-3" style="color: var(--clr-neutral-900);">Custom</p>
             <hr>
             <ul class="read__feature-list text-preset-5">
               <li>Team access</li>
@@ -197,26 +199,44 @@
     </section>
   </main>
   <!-- Footer starts here -->
-  <footer>
-    <div class="content">
-      <h2>Ready to debug your reading list?</h2>
-      <!-- CTA content -->
-      <div>
-        <!-- CTA primary Button -->
-        <button>Review membership options</button>
-        <!-- Testimonial -->
-        <div>
-          <!-- testimonial image -->
-          <img src="./assets/images/image-avatars.webp" alt="Avatar images">
-          <!-- Rating Container -->
-          <div class="rating">
-            <div class="star-container"></div>
-            <p class="testimonial-text">200+ developers joined already</p>
+  <footer >
+    <div class="main__content">
+      <h2 class="main__content__heading text-preset-2">Ready to debug your reading list?</h2>
+          <!-- CTA content -->
+          <div class="cta cta-testimonial" >
+            <!-- CTA primary Button -->
+            <a href="#membership">
+              <button class="button btn btn-secondary text-preset-6">Review membership options
+                <img src="./assets/images/icon-arrow-up.svg" alt="">
+              </button>
+            </a>
+            <!-- Testimonial -->
+            <div class="testimonial">
+              <!-- testimonial image -->
+              <img src="./assets/images/image-avatars.webp" alt="Avatar images" width="110">
+              <!-- Rating Container -->
+              <div class="testimonial-rating">
+                <div class="testimonial-star flex">
+                  <span><img src="./assets/images/icon-star.svg" alt="star icon"></span>
+                  <span><img src="./assets/images/icon-star.svg" aria-hidden="true"></span>
+                  <span><img src="./assets/images/icon-star.svg" aria-hidden="true"></span>
+                  <span><img src="./assets/images/icon-star.svg" aria-hidden="true"></span>
+                  <span><img src="./assets/images/icon-star.svg" aria-hidden="true"></span>
+                </div>
+                <p class="testimonial-text text-preset-7">200+ developers joined
+                  already</p>
+              </div>
+            </div>
           </div>
-        </div>
+    </div>
+
+    <div class="footer__content container flex flex-col" >
+      <p class="text-preset-7">© 2024 - Tech Book Club</p>
+      <div class="social-media flex">
+        <a href="#bluesky"><img src="./assets/images/logo-bluesky.svg" alt="bluesky logo"></a>
+        <a href="#linked"><img src="./assets/images/logo-linkedin.svg" alt="linkedin logo"></a>
       </div>
     </div>
-    <div class="footer">© 2024 - Tech Book Club</div>
   </footer>
 
 </body>

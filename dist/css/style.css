@@ -370,6 +370,40 @@ main {
 main > * {
   margin-bottom: var(--section-spacing, 2rem);
 }
+main .testimonial {
+  max-width: 60.625rem;
+  margin-inline: auto;
+  padding-inline: var(--spacing-200);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-400);
+  align-items: flex-start;
+}
+@media (min-width: 48rem) {
+  main .testimonial {
+    padding-inline: var(--spacing-400);
+  }
+}
+@media (min-width: 75rem) {
+  main .testimonial {
+    padding-inline: 0;
+    align-items: center;
+  }
+}
+main .testimonial-star {
+  --gap: var(--spacing-75) ;
+}
+main .testimonial__text {
+  color: var(--clr-neutral-900);
+}
+@media (min-width: 75rem) {
+  main .testimonial__text {
+    text-align: center;
+  }
+}
+main .testimonial__author {
+  color: var(--clr-neutral-700);
+}
 
 .read,
 .club {
@@ -609,37 +643,62 @@ main > * {
   }
 }
 
-.testimonial {
-  max-width: 60.625rem;
-  margin-inline: auto;
-  padding-inline: var(--spacing-200);
+footer {
+  background-color: var(--clr-neutral-900);
+  padding: var(--spacing-600) var(--spacing-200) 0;
+  border-top-left-radius: var(--radius-20);
+  border-top-right-radius: var(--radius-20);
   display: flex;
   flex-direction: column;
   gap: var(--spacing-400);
-  align-items: flex-start;
 }
 @media (min-width: 48rem) {
-  .testimonial {
-    padding-inline: var(--spacing-400);
+  footer {
+    padding: var(--spacing-800) var(--spacing-400) 0;
+    gap: var(--spacing-800);
   }
 }
 @media (min-width: 75rem) {
-  .testimonial {
+  footer {
+    padding: var(--spacing-1100) var(--spacing-900) 0;
+  }
+}
+footer .cta-testimonial {
+  align-items: center;
+}
+
+.main__content {
+  max-width: 94ch;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-500);
+  color: var(--clr-neutral-0);
+}
+.main__content__heading {
+  text-align: center;
+}
+
+.footer__content {
+  width: 100%;
+  padding: var(--spacing-300) var(--spacing-400);
+  color: var(--clr-neutral-0);
+  align-items: center;
+  border-top: 1px solid var(--clr-neutral-700);
+}
+@media (min-width: 48rem) {
+  .footer__content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 75rem) {
+  .footer__content {
     padding-inline: 0;
-    align-items: center;
   }
 }
-.testimonial-star {
-  --gap: var(--spacing-75) ;
-}
-.testimonial__text {
-  color: var(--clr-neutral-900);
-}
-@media (min-width: 75rem) {
-  .testimonial__text {
-    text-align: center;
-  }
-}
-.testimonial__author {
-  color: var(--clr-neutral-700);
+.footer__content .social-media {
+  --gap: var(--spacing-300);
+  align-items: center;
 }
